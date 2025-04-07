@@ -1,2 +1,2 @@
 # Clean Code & Dirty Tricks
-Rebository for the seminar series **Clean Code &amp; Dirty Tricks**, given at BME, Budapes, Hungary, 2025 spring semester.
+Repository for the seminar series **Clean Code &amp; Dirty Tricks**, given at BME, Budapest, Hungary, 2025 spring semester.
