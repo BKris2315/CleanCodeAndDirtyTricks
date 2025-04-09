@@ -8579,6 +8579,130 @@ main {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="V.-Venvs-and-docstrings">V. Venvs and docstrings<a class="anchor-link" href="#V.-Venvs-and-docstrings">¶</a></h1><img alt="Meme 1" src="imgs/documentation.png" style="width: 50%;"/>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%F0%9F%93%84-Writing-Good-Docstrings-(Google-Style)">📄 Writing Good Docstrings (Google Style)<a class="anchor-link" href="#%F0%9F%93%84-Writing-Good-Docstrings-(Google-Style)">¶</a></h1><blockquote>
+<p><em>“Comments explain <strong>why</strong>, docstrings explain <strong>how to use</strong>.”</em></p>
+</blockquote>
+<h2 id="%F0%9F%A7%A0-Why-Use-Docstrings?">🧠 Why Use Docstrings?<a class="anchor-link" href="#%F0%9F%A7%A0-Why-Use-Docstrings?">¶</a></h2><ul>
+<li>Clarify usage of your functions/classes/modules</li>
+<li>Help others (and future you) understand API contracts</li>
+<li>Power tools like <code>help()</code>, IDEs, and doc generators</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="%E2%9C%85-Google-Style-Format">✅ Google Style Format<a class="anchor-link" href="#%E2%9C%85-Google-Style-Format">¶</a></h2><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">include_inactive</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Fetch a user by ID.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        id (int): Unique user ID.</span>
+<span class="sd">        include_inactive (bool): Include inactive users. Default is False.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: User data dictionary.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        ValueError: If ID is not found or invalid.</span>
+<span class="sd">    """</span>
+</pre></div>
+<h3 id="%E2%9C%A8-Tips-for-Great-Docstrings">✨ Tips for Great Docstrings<a class="anchor-link" href="#%E2%9C%A8-Tips-for-Great-Docstrings">¶</a></h3><ul>
+<li>First line = <strong>short summary</strong> (ends with period)</li>
+<li>Use <strong>imperative tone</strong> (“Return...” not “Returns…”)</li>
+<li>Include <code>Args</code>, <code>Returns</code>, <code>Raises</code>, and optional <code>Examples</code></li>
+<li>Document non-obvious behavior, defaults, edge cases</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%F0%9F%A7%AA-Virtual-Environments-in-Python">🧪 Virtual Environments in Python<a class="anchor-link" href="#%F0%9F%A7%AA-Virtual-Environments-in-Python">¶</a></h1><blockquote>
+<p><em>“A virtual environment is like a sandbox for your Python project.”</em></p>
+</blockquote>
+<h2 id="%F0%9F%A7%A9-Why-Use-Virtual-Environments?">🧩 Why Use Virtual Environments?<a class="anchor-link" href="#%F0%9F%A7%A9-Why-Use-Virtual-Environments?">¶</a></h2><ul>
+<li>Isolate project dependencies (no system-wide mess)</li>
+<li>Avoid version conflicts between projects</li>
+<li>Reproducible environments for collaboration or deployment</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="display: flex; justify-content: space-between;">
+<div style="width: 48%;">
+<h2 id="%F0%9F%9B%A0%EF%B8%8F-Creating-One">🛠️ Creating One<a class="anchor-link" href="#%F0%9F%9B%A0%EF%B8%8F-Creating-One">¶</a></h2><div class="highlight"><pre><span></span><span class="c1"># Create</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+
+<span class="c1"># Activate (Linux/macOS)</span>
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+
+<span class="c1"># Activate (Windows)</span>
+venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</pre></div>
+</div>
+<div style="width: 48%;">
+<h2 id="%F0%9F%A7%B9-Best-Practices">🧹 Best Practices<a class="anchor-link" href="#%F0%9F%A7%B9-Best-Practices">¶</a></h2><ul>
+<li>Name it <code>.venv</code> or <code>venv</code>, and <strong>add to <code>.gitignore</code></strong></li>
+<li>Use <code>requirements.txt</code> or <code>pip freeze &gt; requirements.txt</code></li>
+<li>Deactivate with:</li>
+</ul>
+<div class="highlight"><pre><span></span>deactivate
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="%F0%9F%93%A6-With-pip">📦 With pip<a class="anchor-link" href="#%F0%9F%93%A6-With-pip">¶</a></h2><div class="highlight"><pre><span></span><span class="c1"># Install packages locally to your env</span>
+pip<span class="w"> </span>install<span class="w"> </span>numpy
+
+<span class="c1"># Freeze for others</span>
+pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+
+<span class="c1"># Reinstall for new devs</span>
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+<h3 id="%3E-%E2%80%9CIf-your-project-has-a-venv-and-a-README,-you're-halfway-to-being-professional.%E2%80%9D">&gt; <em>“If your project has a <code>venv</code> and a <code>README</code>, you're halfway to being professional.”</em><a class="anchor-link" href="#%3E-%E2%80%9CIf-your-project-has-a-venv-and-a-README,-you're-halfway-to-being-professional.%E2%80%9D">¶</a></h3>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="References">References<a class="anchor-link" href="#References">¶</a></h1><ol>
 <li><a href="https://medium.com/@akineralkan/list/clean-code-notes-bb47e308d51e">Clean Code Notes</a> by Akiner Alkan</li>
 <li>Robert C. Martin: <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code</a></li>
