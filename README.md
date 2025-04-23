@@ -44,6 +44,23 @@ All material — including slides, code snippets, and links — is hosted in thi
 
 ---
 
+Run the `notebooks` as a slide show with:
+
+```bash
+jupyter nbconvert <notebook.ipynb> --to slides --post serve --no-input --no-prompt
+```
+
+**Note:** You might want to `cd` into the directory where the notebook is.
+
+It needs:
+- jupyter
+- nbconvert 
+
+```bash
+pip install jupyter notebook
+```
+
+---
 ## 📚 Reference Materials
 
 ### 🧼 Clean Code
@@ -59,11 +76,13 @@ All material — including slides, code snippets, and links — is hosted in thi
 
 - [Why Python is slower than C](https://medium.com/thedeephub/but-why-python-is-so-slow-da1a4fb9be92)
 - [Numba from Scratch](https://pythonspeed.com/articles/numba-faster-python/)
-- [Numba 101 – Real Python](https://realpython.com/pypy-faster-python/)
+- [PyPy 101 – Real Python](https://realpython.com/pypy-faster-python/)
 - [JIT Compilation (Numba Tutorial)](https://medium.com/data-science/make-python-run-as-fast-as-c-9fdccdb501d4)
 - [Speed Up with Numba – Kaggle](https://www.kaggle.com/code/rudrasing/speed-up-python-code-up-to-100x-using-numba)
+- [Make python fast with numba](https://thedatafrog.com/en/articles/make-python-fast-numba/)
 - [PyPy Documentation](https://doc.pypy.org/en/latest/)
 - [JAX vs NumPy](https://medium.com/@harshavardhangv/jax-vs-numpy-key-differences-and-benefits-72e442bbf67f)
+- [Introduction to Jax](https://www.kaggle.com/code/goktugguvercin/introduction-to-jax)
 
 ---
 
@@ -71,11 +90,13 @@ All material — including slides, code snippets, and links — is hosted in thi
 
 - [Intro to Multiprocessing – Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/04/a-beginners-guide-to-multi-processing-in-python/)
 - [Optimal Multiprocessing – Medium](https://medium.com/@sampsa.riikonen/doing-python-multiprocessing-the-right-way-a54c1880e300)
-- [Threads vs Processes – DataCamp + Contentsquare](https://www.datacamp.com/tutorial/python-multiprocessing-tutorialhttps://engineering.contentsquare.com/2018/multithreading-vs-multiprocessing-in-python/)
+- [Threads vs Processes – DataCamp](https://www.datacamp.com/tutorial/python-multiprocessing-tutorial)
+- [Threads vs Processes – Contentsquare](https://engineering.contentsquare.com/2018/multithreading-vs-multiprocessing-in-python/)
 - [ProcessPoolExecutor Guide – Medium](https://medium.com/@superfastpython/python-processpoolexecutor-7-day-crash-course-71cf062409d2)
 - [SuperfastPython – ProcessPoolExecutor](https://superfastpython.com/processpoolexecutor-in-python/)
 - [RealPython on the GIL](https://realpython.com/python-gil/)
 - [High-Speed Execution Tips – Analytics Vidhya](https://www.analyticsvidhya.com/blog/2024/01/optimize-python-code-for-high-speed-execution/)
+- [PyTorch mastery course](https://github.com/mrdbourke/pytorch-deep-learning?tab=readme-ov-file)
 
 ---
 
